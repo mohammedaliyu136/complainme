@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Details of your complain</h2>
+<h3>Code: {{complain.code}}</h3>
+<h3>Subject: {{complain.subject}}</h3>
+<h3>Message:</h3>
+<p>{{complain.message}}</p>
+<h3>Department: {{complain.govt_agency.name}}</h3>
+{% endblock %}

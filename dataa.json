@@ -1,0 +1,290 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$10sJD2Ki04N3$zhs6hpVhdAyGSmsFkfkPl+rXEF8fQ6oZYlWtVgPTWaU=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "faruq",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-21T15:07:19.510Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$JLjeW7sxfcFV$kqiM9APLyl9Ub8GS/tK3AgXw7FzlNYAJqZRNfKYE2Ec=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "abdul",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-21T15:08:00.464Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$EPRl3AaQGEYj$Bn3XxLKENFLJxGFZNFcxCPNIkxlzvhnfduhiJPERQQ4=",
+        "last_login": "2017-12-21T16:06:04.479Z",
+        "is_superuser": true,
+        "username": "mohammed",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-21T15:08:33.700Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$Io3CSXTuYI0u$gOxJwy26nUiLF6ZlQ5JujlkjX9t/wbRbQTmDWoSEARE=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "ashraf",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-21T15:09:14.840Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$SDaA8QDGsHd3$CMRnu+MVGPxK/cdl99RFsl/JYovYs8p1vxhCVHw5beE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ahmed",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-12-21T16:07:14Z",
+        "groups": [],
+        "user_permissions": [
+            [
+                "change_complain",
+                "complain",
+                "complain"
+            ]
+        ]
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hilfph0luuugmolnm3387ekp47z6p8nu",
+    "fields": {
+        "session_data": "Y2ZkNTJhMDVjNDYyZWQyNjBjODE3NWYzNGVkNmE3YjMwOWY0OWNjZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjNmNDM4N2ZhYWUyZjczZjA3M2NmOTFiMGUwN2RkNmYyOTczMzAzY2UiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIzIn0=",
+        "expire_date": "2018-01-04T16:06:04.668Z"
+    }
+},
+{
+    "model": "complain.govt_agency",
+    "pk": 1,
+    "fields": {
+        "name": "Government Agency 1",
+        "department": "Accounting",
+        "address": "shagari",
+        "phone": "125369273",
+        "user_name": [
+            "mohammed"
+        ]
+    }
+},
+{
+    "model": "complain.govt_agency",
+    "pk": 2,
+    "fields": {
+        "name": "People Government Agency 1",
+        "department": "Works",
+        "address": "Yola",
+        "phone": "325369273",
+        "user_name": [
+            "faruq"
+        ]
+    }
+},
+{
+    "model": "complain.govt_agency",
+    "pk": 3,
+    "fields": {
+        "name": "NPF",
+        "department": "Accounting",
+        "address": "shagari",
+        "phone": "525369273",
+        "user_name": [
+            "ahmed"
+        ]
+    }
+},
+{
+    "model": "complain.complain",
+    "pk": 1,
+    "fields": {
+        "code": "3648",
+        "subject": "My Cat is missing",
+        "message": "sjdjfjjfjf jfjfjfjfl",
+        "status": "Not treated",
+        "govt_agency": 1
+    }
+},
+{
+    "model": "complain.complain",
+    "pk": 3,
+    "fields": {
+        "code": "2648",
+        "subject": "Ahmed is missing",
+        "message": "mmmsjdjfjjfjf jfjfjfjfl",
+        "status": "not read",
+        "govt_agency": 3
+    }
+},
+{
+    "model": "complain.complain",
+    "pk": 4,
+    "fields": {
+        "code": "4536",
+        "subject": "Look past the fury for friction",
+        "message": "It\u2019s a fallacy to assume that just because someone is behaving wildly, his or her argument has no merit. Complaints, even angry ones, can contain insight \u2014 it\u2019s your job to seek out the friction.  Evernote CEO Phil Libin offers up one of my favorite truisms on listening to feedback: \u201cFeedback is great for telling you what you did wrong. It's terrible at telling you what you should do next.\u201d",
+        "status": "not read",
+        "govt_agency": 3
+    }
+},
+{
+    "model": "complain.complain",
+    "pk": 5,
+    "fields": {
+        "code": "3475",
+        "subject": "How Django processes a request",
+        "message": "An instance of HttpRequest.\r\nIf the matched URL pattern returned no named groups, then the matches from the regular expression are provided as positional arguments.\r\nThe keyword arguments are made up of any named parts matched by the path expression, overridden by any arguments specified in the optional kwargs argument to django.urls.path() or django.urls.re_path().\r\nIf no URL pattern matches, or if an exception is raised during any point in this process, Django invokes an appropriate error-handling view. See Error handling below.",
+        "status": "not read",
+        "govt_agency": 2
+    }
+},
+{
+    "model": "complain.complain",
+    "pk": 6,
+    "fields": {
+        "code": "390",
+        "subject": "Create First Web Page With Bootstrap",
+        "message": "Bootstrap uses HTML elements and CSS properties that require the HTML5 doctype.\r\n\r\nAlways include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct character set:",
+        "status": "not read",
+        "govt_agency": 3
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-12-21T16:07:15.013Z",
+        "user": [
+            "mohammed"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "ahmed",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-12-21T16:07:23.113Z",
+        "user": [
+            "mohammed"
+        ],
+        "content_type": [
+            "complain",
+            "govt_agency"
+        ],
+        "object_id": "3",
+        "object_repr": "NPF Accounting",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"user_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-12-23T18:13:57.805Z",
+        "user": [
+            "mohammed"
+        ],
+        "content_type": [
+            "complain",
+            "complain"
+        ],
+        "object_id": "2",
+        "object_repr": "adff",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-12-23T18:52:42.489Z",
+        "user": [
+            "mohammed"
+        ],
+        "content_type": [
+            "complain",
+            "complain"
+        ],
+        "object_id": "4",
+        "object_repr": "Look past the fury for friction",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-12-23T21:27:15.148Z",
+        "user": [
+            "mohammed"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "ahmed",
+        "action_flag": 2,
+        "change_message": "Changed user_permissions."
+    }
+}
+]
