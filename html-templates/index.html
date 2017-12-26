@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style type="text/css">
+		.row{
+			margin-top: 3%;
+		}
+		form{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.main{
+			margin: 5%;
+			margin-left: 15%;
+			margin-right: 15%;
+			width: 70%
+				}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Brand Name</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#Complain" data-toggle="modal" data-target="#complain">Complain</a></li>
+      <li><a href="#Check" data-toggle="modal" data-target="#check">Check Complain Status</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#signup" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#login" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="email">Username:</label>
+          <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="password">
+        </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-success">Login</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup Modal -->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="pwd">
+        </div>
+        <div class="form-group">
+          <label for="pwd_again">Password Again:</label>
+          <input type="password" class="form-control" name="pwd_again">
+        </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-success">Register</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="complain" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Submit Your Complains</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+		<form action="" method="post">
+		  <div class="form-group">
+		    <label for="complainSubject">Complain Subject:</label>
+		    <input type="text" class="form-control" id="complainSubject" placeholder=" Complain Subject Goes here">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleFormControlSelect1">Concern Agency:</label>
+		    <select class="form-control" id="exampleFormControlSelect1">
+		      <option>SF1</option>
+		      <option>AD2</option>
+		      <option>VF3</option>
+		      <option>WE4</option>
+		      <option>TG5</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="complainMsg">Your Complain:</label>
+		    <textarea class="form-control" id="complainMsg" rows="3"></textarea>
+		  </div>
+		  
+	</div>
+      </div>
+      <div class="modal-footer">
+      	<div class="form-group">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			 <button type="submit" class="btn btn-success">Submit</button>
+		  </div>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="check" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Check Complain Status</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+			<form>
+			  <div class="form-group">
+			    <label for="complainCode">Complain Code:</label>
+			    <input type="text" class="form-control" id="complainCode" placeholder=" Complain Code Goes here">
+			  </div>
+		</div>
+      </div>
+      <div class="modal-footer">
+      	<div class="form-group">
+        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="submit" class="btn btn-success">Submit</button>
+			  </div>
+			</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- list body start -->
+<div class="container main">            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th style="background-color: grey; color: white"><h3><center>Complains</center></h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#">JoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">MaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JulJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryy</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">MaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JulJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryy</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">MaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JulJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryy</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">MaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMary</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">JulJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryJoMarJulyyhnJulyMaryy</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<!-- list body end -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
